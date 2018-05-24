@@ -37,6 +37,7 @@ export default {
     methods:{
         logout(){
             this.$emit('logout')
+            this.localStorage.clear()
             swal('success to logout')
         }
         
